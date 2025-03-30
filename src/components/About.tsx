@@ -2,6 +2,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download } from 'lucide-react';
+import resume from "../assets/Pavani tarun.pdf"
+
 
 const About = () => {
   return (
@@ -22,7 +24,7 @@ const About = () => {
             </p>
             
             <Button className="btn-primary" asChild>
-              <a href="#" download>
+              <a href={resume} target='_blank'>
                 <Download size={18} className="mr-2" />
                 Download Resume
               </a>

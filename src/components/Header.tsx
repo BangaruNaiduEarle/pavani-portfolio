@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import resume from "../assets/Pavani tarun.pdf"
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +59,9 @@ const Header = () => {
             </a>
           ))}
           <Button className="btn-primary">
+            <a href={resume} target='_ blank'>
             Download Resume
+            </a>
           </Button>
         </nav>
 
@@ -85,7 +89,10 @@ const Header = () => {
               </a>
             ))}
             <Button className="btn-primary w-full">
+              <a  href={resume} target='_ blank'>
               Download Resume
+              </a>
+             
             </Button>
           </div>
         </div>

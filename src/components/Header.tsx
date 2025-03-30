@@ -37,7 +37,9 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" className="text-navy font-bold text-xl md:text-2xl">
+        <a href="#home" className={`font-bold text-xl md:text-2xl ${
+          isScrolled ? 'text-navy' : 'text-white'
+        }`}>
           Pavani Pasupuleti
         </a>
 
@@ -47,7 +49,9 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-navy hover:text-salesforce font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isScrolled ? 'text-navy hover:text-salesforce' : 'text-white hover:text-salesforce'
+              }`}
             >
               {link.name}
             </a>
@@ -59,7 +63,7 @@ const Header = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-navy"
+          className={`md:hidden ${isScrolled ? 'text-navy' : 'text-white'}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

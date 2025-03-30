@@ -23,10 +23,10 @@ const Hero = () => {
                 Transforming business requirements into powerful Salesforce solutions with expertise in Apex, LWC, and custom configurations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="btn-primary" asChild>
+                <Button className="btn-primary bg-navy" asChild>
                   <a href="#projects">Explore My Work</a>
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <Button variant="outline" className=" text-black  hover:bg-white/10 hover:bg-white" asChild>
                   <a href="#contact">Contact Me</a>
                 </Button>
               </div>
